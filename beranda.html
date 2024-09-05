@@ -3,9 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Beranda</title>
+    <!-- Menambahkan Google Fonts untuk Poppins Black dan Light -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        header {
+    background-color: #AAB396;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Memusatkan semua elemen secara horizontal */
+    text-align: center; /* Memusatkan teks di dalam elemen */
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center; /* Memusatkan konten di dalam box */
+    margin-bottom: 10px; /* Jarak antara box dan subtitle */
+}
+
+.box img {
+    height: 80px; /* Perbesar ukuran gambar logo */
+    margin-right: -10px; /* Jarak antara gambar dan teks */
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* Memusatkan teks di dalam title-container */
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 900; /* Menggunakan Poppins Black untuk judul */
+    letter-spacing: 3px;
+    margin-top: -4px; /* Menghapus margin untuk pemusatan yang lebih baik */
+}
+
+.subtitle {
+    font-size: 14px;
+    font-weight: 300; /* Menggunakan Poppins Light untuk teks deskripsi */
+    margin-top: -10px; /* Menghapus margin untuk pemusatan yang lebih baik */
+}
+
+.nav-menu {
+    display: flex;
+    gap: 28px; /* Menentukan jarak antar item menu */
+    font-size: 14px;
+    font-weight: 300; /* Menggunakan Poppins Light untuk menu */
+    justify-content: center; /* Memusatkan menu navigasi */
+    width: 100%; /* Menggunakan seluruh lebar header */
+    margin-top: -12px; /* Jarak antara subtitle dan menu */
+}
+
+.nav-menu a {
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: white;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline; /* Menambahkan garis bawah saat hover */
+}
+
+    </style>
 </head>
 <body>
-    
+    <header>
+        <div class="box">
+            <img src="logo.png" alt="Logo"> <!-- Gambar logo -->
+            <div class="title-container">
+                <div class="title">SIDEKAT</div>
+                <div class="subtitle">Sistem Informasi Desa Terpadu</div>
+            </div>
+        </div>
+        <nav class="nav-menu">
+            <a href="#profile">Profile Desa</a>
+            <a href="#wisata">Informasi Wisata</a>
+            <a href="#alamat">Alamat</a>
+            <a href="#narahubung">Narahubung</a>
+            <a href="#tentang">Tentang Kami</a>
+        </nav>
+    </header>
 </body>
 </html>
